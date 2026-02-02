@@ -15,3 +15,7 @@
 ---
 
 ##### worked on plotting file to plot the results of the output 
+
+---
+
+##### worked on creating files - LICENSE, DESCRIPTION, NAMESPACE
