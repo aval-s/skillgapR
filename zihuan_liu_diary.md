@@ -7,3 +7,7 @@
 ---
 
 ##### Learned how to fetch API from JSearch and how we are getting data 
+
+---
+
+##### worked on input helpers to get user input
