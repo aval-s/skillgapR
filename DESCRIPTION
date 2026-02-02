@@ -1,0 +1,29 @@
+Package: skillgapR
+Title: Analyze Job Market Skill Demand Using the JSearch API
+Version: 0.1.0
+Authors@R:
+    person("Avalvir", "Sekhon", email = "avaksekhon@gmail.com", role = c("aut", "cre"))
+Description:
+    An R package that wraps the JSearch REST API to retrieve job postings
+    and analyze job market skill demand using a canonical skill dictionary.
+    The package provides high-level functions for data retrieval, analysis,
+    and visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    purrr,
+    stringr,
+    tibble,
+    ggplot2,
+    httr,
+    jsonlite
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3

@@ -1,0 +1,85 @@
+---
+title: "From Zero to Skill Demand"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{From Zero to Skill Demand}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(skillgapR)
+library(dplyr)
+```
+
+
+## Introduction
+
+This vignette demonstrates how to use the `skillgapR` package to retrieve
+job postings via the JSearch API and analyze job-market skill demand.
+
+---
+
+## Fetch job postings
+
+The following example shows how to retrieve job postings using the JSearch API.
+This step requires a valid RapidAPI key and is therefore not executed when
+building the vignette.
+
+```r
+```{r, eval=FALSE}
+jobs <- fetch_job_descriptions(
+  query = "Data Scientist",
+  location = "Canada"
+)
+```
+
+
+---
+
+## Example job data
+
+For demonstration purposes, we use a small set of example job descriptions so
+that the vignette can run without requiring API access.
+
+```r
+```{r}
+jobs <- tibble::tibble(
+  job_description = c(
+    "python sql machine learning statistics",
+    "data analysis python communication",
+    "machine learning modeling cloud aws"
+  )
+)
+```
+
+
+---
+
+## Analyze skill demand
+
+```r
+```{r}
+skills <- analyze_skills(jobs)
+head(skills)
+```
+
+
+---
+
+## Visualize skill demand
+
+```r
+```{r}
+plot_skill_demand(skills)
+```
+
+
+---
+
+## Summary
+
+This vignette illustrated an end-to-end workflow using `skillgapR`, from job
+postings to skill demand analysis and visualization.
