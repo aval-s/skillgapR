@@ -16,3 +16,10 @@
 ---
 
 ### worked on the file for skill_analysis to count the skills in different jobs. 
+
+---
+
+### worked on file api_jsearch.R to fetch the jobs 
+
+---
+
