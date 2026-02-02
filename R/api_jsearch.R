@@ -17,7 +17,8 @@
 #' }
 #'
 #' @return A tibble with a single column \code{job_description}.
-#'
+#' 
+#' @importFrom dplyr %>%
 #' @export
 fetch_job_descriptions <- function(query, location, num_pages = 1) {
   

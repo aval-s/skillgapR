@@ -14,7 +14,7 @@ Install the development version from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("https://github.com/aval-s/skillgapR")
+devtools::install_github("your-github-username/skillgapR")
 ```
 ---
 

@@ -8,7 +8,7 @@ vignette: >
 ---
 
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE}Sys.setenv(RAPIDAPI_KEY = "your_api_key_here")
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 library(skillgapR)
 library(dplyr)
